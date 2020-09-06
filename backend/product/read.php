@@ -24,7 +24,7 @@
   
 	    // products array
 	    $products_arr=array();
-	    $products_arr["produtos"]=array();
+	    //$products_arr["produtos"]=array();
   
 	    // retrieve our table contents
 	    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
