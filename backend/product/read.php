@@ -19,6 +19,9 @@
     $stmt = $product->read();
     $num = $stmt->rowCount();
   
+    // aux variable
+    $position=1;
+
     // check if more than 0 record found
     if($num>0){
   
@@ -36,9 +39,11 @@
         		"codigo" => $codigo,
         		"nome" => $nome,
         		"preco" => $preco,
+			"posicao" => $position,
     	    	);
   
 	    	array_push($products_arr, $product_item);
+		$position++;
 
 	    }
   
