@@ -39,7 +39,8 @@
         	"preco" => $preco,
     	    );
   
-    	    array_push($products_arr["produtos"], $product_item);
+    	    //array_push($products_arr["produtos"], $product_item);
+	    array_push($products_arr, $product_item);
 	    }
   
 	    // set response code - 200 OK
